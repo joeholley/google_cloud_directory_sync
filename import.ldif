@@ -1,27 +1,27 @@
-dn: dc=example,dc=com
+dn: dc=levelupfromzero,dc=dev
 objectclass: dcObject
 objectclass: organization
 o: ESO-google
-dc: example
+dc: levelupfromzero
 
-dn: ou=people, dc=example,dc=com
+dn: ou=people, dc=levelupfromzero,dc=dev
 ou: people
 description: All people in organisation
 objectclass: organizationalunit
 
-dn: ou=groups, dc=example,dc=com
+dn: ou=groups, dc=levelupfromzero,dc=dev
 ou: groups
 description: All groups in organisation
 objectclass: organizationalunit
 
-dn: cn=user1,ou=people, dc=example,dc=com
-labeledURI: http://www.google.com
+dn: cn=user1,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
 givenName: user1
 sn: user1
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
 displayName: user1
-mail: user1@example.com
+mail: user1@levelupfromzero.dev
 uid: user1
 objectClass: top
 objectClass: person
@@ -32,14 +32,14 @@ cn: user1
 title: GSA
 description: user1 account
 
-dn: cn=user2,ou=people, dc=example,dc=com
-labeledURI: http://www.google.com
+dn: cn=user2,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
 givenName: user2
 sn: user2
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
 displayName: user2
-mail: user2@example.com
+mail: user2@levelupfromzero.dev
 uid: user2
 objectClass: top
 objectClass: person
@@ -49,16 +49,133 @@ homePhone: 401-555-1234
 cn: user2
 description: useraccount
 
-dn: cn=finance, ou=groups, dc=example,dc=com
-cn: finance
-description: finance@example.com
-objectclass: groupofuniquenames
-uniqueMember: cn=user1,ou=people, dc=example,dc=com
+dn: cn=user3,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
+givenName: user3
+sn: user3
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: user3
+mail: user3@levelupfromzero.dev
+uid: user3
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: user3
+description: useraccount
 
-dn: cn=engineering, ou=groups, dc=example,dc=com
-cn: engineering
+dn: cn=user4,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
+givenName: user4
+sn: user4
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: user4
+mail: user4@levelupfromzero.dev
+uid: user4
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: user4
+description: useraccount
+
+dn: cn=user5,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
+givenName: user5
+sn: user5
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: user5
+mail: user5@levelupfromzero.dev
+uid: user5
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: user5
+description: useraccount
+
+dn: cn=user6,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
+givenName: user6
+sn: user6
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: user6
+mail: user6@levelupfromzero.dev
+uid: user6
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: user6
+description: useraccount
+
+dn: cn=user7,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
+givenName: user7
+sn: user7
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: user7
+mail: user7@levelupfromzero.dev
+uid: user7
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: user7
+description: useraccount
+
+dn: cn=user8,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.google.dev
+givenName: user8
+sn: user8
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: user8
+mail: user8@levelupfromzero.dev
+uid: user8
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: user8
+description: useraccount
+
+dn: cn=finance, ou=groups, dc=levelupfromzero,dc=dev
+cn: finance
+description: finance@levelupfromzero.dev
 objectclass: groupofuniquenames
-description: engineering@example.com
-uniqueMember: cn=user1,ou=people, dc=example,dc=com
-uniqueMember: cn=user2,ou=people, dc=example,dc=com
+uniqueMember: cn=user1,ou=people, dc=levelupfromzero,dc=dev
+
+dn: cn=networkadmins, ou=groups, dc=levelupfromzero,dc=dev
+cn: networkadmins
+objectclass: groupofuniquenames
+description: networkadmins@levelupfromzero.dev
+uniqueMember: cn=user2,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=user3,ou=people, dc=levelupfromzero,dc=dev
+
+dn: cn=teamyellow, ou=groups, dc=levelupfromzero,dc=dev
+cn: teamyellow
+objectclass: groupofuniquenames
+description: teamyellow@levelupfromzero.dev
+uniqueMember: cn=user4,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=user5,ou=people, dc=levelupfromzero,dc=dev
+
+dn: cn=teamgreen, ou=groups, dc=levelupfromzero,dc=dev
+cn: teamgreen
+objectclass: groupofuniquenames
+description: teamgreen@levelupfromzero.dev
+uniqueMember: cn=user6,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=user7,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=user8,ou=people, dc=levelupfromzero,dc=dev
 
