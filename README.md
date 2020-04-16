@@ -64,14 +64,14 @@ Alternatively, you can install an LDAP UI like [Apache Directory Studio](https:/
 ##### Load the sample data
 
 ```
-ldapadd -v -x -D "cn=admin,dc=example,dc=com" -w mypassword  -H ldap://localhost:1389 -f import.ldif 
+ldapadd -v -x -D "cn=admin,dc=levelupfromzero,dc=dev" -w mypassword  -H ldap://localhost:1389 -f import.ldif 
 ```
 If you used Apache Directory Studio, you can load and execute the `.ldif` file directly ("LDAP-->New LDIF FIle") after you establish a connection:
 ![Directory Studio](images/apache_ds.png)
 
 ##### Verify via query
 ```
-ldapsearch -v -x -D "cn=admin,dc=example,dc=com" -w mypassword -b "ou=people,dc=example,dc=com" -H ldap://localhost:1389
+ldapsearch -v -x -D "cn=admin,dc=levelupfromzero,dc=dev" -w mypassword -b "ou=people,dc=levelupfromzero,dc=dev" -H ldap://localhost:1389
 ```
 If you use Directory Studio, you can browse the imported LDAP structure in the console directly.
 
@@ -92,7 +92,7 @@ You need to be domain super user to syn and run this utility:
 
 #### Connect to the LDAP server
 
-Connect as `cn=admin,dc=example,dc=com` .  The default password is `mypassword` .
+Connect as `cn=admin,dc=levelupfromzero,dc=dev` .  The default password is `mypassword` .
 
 ![LDAP Config](images/2_ldap_config.png)
 
@@ -121,7 +121,7 @@ I've made some specific maps for LDAP attributes to G Suite attributes:
 ![User Config](images/2_user_accounts.png)
 
 
-The users in LDAP are found under `ou=People,dc=example,dc=com`  and the primary identifier is `cn`
+The users in LDAP are found under `ou=People,dc=levelupfromzero,dc=dev`  and the primary identifier is `cn`
 ![User Attributes](images/2a_user_additional_attributes.png)
 
 
