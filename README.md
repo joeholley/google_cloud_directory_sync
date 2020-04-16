@@ -42,12 +42,12 @@ The first step is to setup the local LDAP server.  You will need to clone the gi
 
 #### Build the container
 ```
-docker build -t myldap .
+docker build -t lufzldap .
 ```
 
 #### Start the container
 ```
-docker run -p 1389:389 -p 1636:636 myldap slapd  -h "ldap://0.0.0.0:389  ldaps://0.0.0.0:636" -d 3 -f /ldap/slapd.conf
+docker run -p 1389:389 -p 1636:636 lufzldap
 ```
 
 #### Install LDAP utilities on the host
