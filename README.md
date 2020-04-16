@@ -45,10 +45,18 @@ The first step is to setup the local LDAP server.  You will need to clone the gi
 docker build -t lufzldap .
 ```
 
-#### Start the container
+#### Start the container locally
 ```
 docker run -p 1389:389 -p 1636:636 lufzldap
 ```
+
+#### Start the container on a VM 
+```
+gcloud compute instances create-with-container lufzldap --container-image gcr.io/`gcloud config get-value core/project`/lufzldap:latest --tags=http-server,https-server
+export LDAP_IP=`gcloud compute instances describe lufzldap \
+  --format='get(networkInterfaces[0].accessConfigs[0].natIP)'`
+```
+
 
 #### Install LDAP utilities on the host
 Either:
@@ -64,14 +72,23 @@ Alternatively, you can install an LDAP UI like [Apache Directory Studio](https:/
 ##### Load the sample data
 
 ```
+# Local version
 ldapadd -v -x -D "cn=admin,dc=levelupfromzero,dc=dev" -w mypassword  -H ldap://localhost:1389 -f import.ldif 
+
+# container-on-a-vm version
+ldapadd -v -x -D "cn=admin,dc=levelupfromzero,dc=dev" -w mypassword  -H ldap://$LDAP_IP:80 -f import.ldif
 ```
 If you used Apache Directory Studio, you can load and execute the `.ldif` file directly ("LDAP-->New LDIF FIle") after you establish a connection:
 ![Directory Studio](images/apache_ds.png)
 
 ##### Verify via query
 ```
+# local version
 ldapsearch -v -x -D "cn=admin,dc=levelupfromzero,dc=dev" -w mypassword -b "ou=people,dc=levelupfromzero,dc=dev" -H ldap://localhost:1389
+
+# container-on-a-vm version
+ldapsearch -v -x -D "cn=admin,dc=levelupfromzero,dc=dev" -w mypassword -b "ou=people,dc=levelupfromzero,dc=dev" -H ldap://$LDAP_IP:80
+
 ```
 If you use Directory Studio, you can browse the imported LDAP structure in the console directly.
 
