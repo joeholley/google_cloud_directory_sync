@@ -1,7 +1,7 @@
 dn: dc=levelupfromzero,dc=dev
 objectclass: dcObject
 objectclass: organization
-o: ESO-google
+o: Level Up From Zero 
 dc: levelupfromzero
 
 dn: ou=people, dc=levelupfromzero,dc=dev
@@ -14,168 +14,168 @@ ou: groups
 description: All groups in organisation
 objectclass: organizationalunit
 
-dn: cn=user1,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user1
-sn: user1
+dn: cn=ralfp,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Ralf
+sn: Pritchard 
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user1
-mail: user1@levelupfromzero.dev
-uid: user1
+displayName: Ralf Pritchard
+mail: ralfp@levelupfromzero.dev
+uid: 1003
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user1
+cn: ralfp
 title: GSA
-description: user1 account
-
-dn: cn=user2,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user2
-sn: user2
-telephoneNumber: x105
-userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user2
-mail: user2@levelupfromzero.dev
-uid: user2
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-homePhone: 401-555-1234
-cn: user2
 description: useraccount
 
-dn: cn=user3,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user3
-sn: user3
+dn: cn=deeptis,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Deepti
+sn: Singh
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user3
-mail: user3@levelupfromzero.dev
-uid: user3
+displayName: Deepti Singh
+mail: deeptis@levelupfromzero.dev
+uid: 1004
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user3
+cn: deeptis
 description: useraccount
 
-dn: cn=user4,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user4
-sn: user4
+dn: cn=ivand,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Ivan
+sn: Durant
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user4
-mail: user4@levelupfromzero.dev
-uid: user4
+displayName: Ivan Durant
+mail: ivand@levelupfromzero.dev
+uid: 1005
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user4
+cn: ivand
 description: useraccount
 
-dn: cn=user5,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user5
-sn: user5
+dn: cn=hartmutw,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Hartmut
+sn: Wagner
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user5
-mail: user5@levelupfromzero.dev
-uid: user5
+displayName: Hartmut Wagner
+mail: hartmutw@levelupfromzero.dev
+uid: 1006
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user5
+cn: hartmutw
 description: useraccount
 
-dn: cn=user6,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user6
-sn: user6
+dn: cn=indaht,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Indah
+sn: Tirrand
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user6
-mail: user6@levelupfromzero.dev
-uid: user6
+displayName: Indah Tirrand
+mail: indaht@levelupfromzero.dev
+uid: 1007
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user6
+cn: indaht
 description: useraccount
 
-dn: cn=user7,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user7
-sn: user7
+dn: cn=mauriciok,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Mauricio
+sn: Keller
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user7
-mail: user7@levelupfromzero.dev
-uid: user7
+displayName: Mauricio Keller
+mail: mauriciok@levelupfromzero.dev
+uid: 1008
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user7
+cn: mauriciok
 description: useraccount
 
-dn: cn=user8,ou=people, dc=levelupfromzero,dc=dev
-labeledURI: http://www.google.dev
-givenName: user8
-sn: user8
+dn: cn=rosalindm,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Rosalind
+sn: Matsushita
 telephoneNumber: x105
 userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
-displayName: user8
-mail: user8@levelupfromzero.dev
-uid: user8
+displayName: Rosalind Matsushita
+mail: rosalindm@levelupfromzero.dev
+uid: 1009
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 homePhone: 401-555-1234
-cn: user8
+cn: rosalindm
+description: useraccount
+
+dn: cn=silvesterb,ou=people, dc=levelupfromzero,dc=dev
+labeledURI: http://www.levelupfromzero.dev
+givenName: Silvester
+sn: Bristol
+telephoneNumber: x105
+userPassword: {SHA}kd/Z3bQZiv/FwZTNjObTOP3kcOI=
+displayName: Silvester Bristol
+mail: silvesterb@levelupfromzero.dev
+uid: 1010
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+homePhone: 401-555-1234
+cn: silvesterb
 description: useraccount
 
 dn: cn=finance, ou=groups, dc=levelupfromzero,dc=dev
 cn: finance
 description: finance@levelupfromzero.dev
 objectclass: groupofuniquenames
-uniqueMember: cn=user1,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=ralfp,ou=people, dc=levelupfromzero,dc=dev
 
 dn: cn=networkadmins, ou=groups, dc=levelupfromzero,dc=dev
 cn: networkadmins
 objectclass: groupofuniquenames
 description: networkadmins@levelupfromzero.dev
-uniqueMember: cn=user2,ou=people, dc=levelupfromzero,dc=dev
-uniqueMember: cn=user3,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=deeptis,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=ivand,ou=people, dc=levelupfromzero,dc=dev
 
 dn: cn=teamyellow, ou=groups, dc=levelupfromzero,dc=dev
 cn: teamyellow
 objectclass: groupofuniquenames
 description: teamyellow@levelupfromzero.dev
-uniqueMember: cn=user4,ou=people, dc=levelupfromzero,dc=dev
-uniqueMember: cn=user5,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=hartmutw,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=indaht,ou=people, dc=levelupfromzero,dc=dev
 
-dn: cn=teamgreen, ou=groups, dc=levelupfromzero,dc=dev
-cn: teamgreen
+dn: cn=teamred, ou=groups, dc=levelupfromzero,dc=dev
+cn: teamred
 objectclass: groupofuniquenames
-description: teamgreen@levelupfromzero.dev
-uniqueMember: cn=user6,ou=people, dc=levelupfromzero,dc=dev
-uniqueMember: cn=user7,ou=people, dc=levelupfromzero,dc=dev
-uniqueMember: cn=user8,ou=people, dc=levelupfromzero,dc=dev
+description: teamred@levelupfromzero.dev
+uniqueMember: cn=mauriciok,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=rosalindm,ou=people, dc=levelupfromzero,dc=dev
+uniqueMember: cn=silvesterb,ou=people, dc=levelupfromzero,dc=dev
 
